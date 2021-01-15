@@ -1,0 +1,11 @@
+---
+# Default Manifest with single input for sample
+applications:
+- name: enterprise-messaging-app-subscriber
+  memory: 1G
+  path: target/enterprise-messaging-sub-0.0.1-SNAPSHOT.jar
+  random-route: true
+  services:
+    # This must point to an existing `enterprise messaging` service instance
+    # - emjapi-samples-sapcp
+    - client-ems
